@@ -1,0 +1,248 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: #080e25;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  height: 70px;
+  display: flex;
+  align-items: center;
+  padding: 0 22px;
+  border-bottom: 1px solid #263f78;
+  background: #111b38;
+}
+
+header h1 {
+  margin: 0;
+  color: #66a8ff;
+  font-size: 24px;
+}
+
+main {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 28px 30px 100px;
+}
+
+.introducao {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.introducao h2 {
+  font-size: 34px;
+  margin: 12px 0 10px;
+}
+
+.introducao p {
+  color: #9db0d6;
+  margin: 0;
+}
+
+.campeoes {
+  display: flex;
+  gap: 30px;
+}
+
+.card {
+  width: 390px;
+  overflow: hidden;
+  border: 1px solid #263f78;
+  border-radius: 8px;
+  background: #1a2a50;
+}
+
+.imagem {
+  position: relative;
+  height: 252px;
+  margin: 20px 20px 0;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding-bottom: 18px;
+  background: #5a1eb0;
+}
+
+.ignis {
+  background: linear-gradient(145deg, #6d28a9, #e75d4a);
+}
+
+.vektor {
+  background: #087ac9;
+}
+
+.kage {
+  background: #160a22;
+}
+
+.tag {
+  position: absolute;
+  z-index: 2;
+  top: 12px;
+  right: 12px;
+  padding: 7px 9px;
+  border-radius: 5px;
+  background: #ff8a00;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.tag.azul {
+  background: #a726ff;
+}
+
+.tag.status {
+  left: 12px;
+  right: auto;
+  top: 154px;
+  background: #19a64a;
+}
+
+.tag.vermelho {
+  background: #df342f;
+}
+
+.imagem strong {
+  position: relative;
+  z-index: 3;
+  font-size: 15px;
+  letter-spacing: 2px;
+}
+
+.personagem {
+  position: absolute;
+  left: 50%;
+  bottom: 58px;
+  width: 90px;
+  height: 150px;
+  transform: translateX(-50%);
+  border-radius: 50% 50% 15px 15px;
+  background: #26316d;
+}
+
+.personagem::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: -35px;
+  width: 70px;
+  height: 70px;
+  transform: translateX(-50%);
+  border-radius: 50%;
+  background: #3f55b5;
+}
+
+.personagem span::before,
+.personagem span::after {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  top: 13px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #52baff;
+}
+
+.personagem span::before {
+  left: 24px;
+}
+
+.personagem span::after {
+  right: 24px;
+}
+
+.vektor .personagem {
+  height: 120px;
+  background: #1b50a5;
+  border-radius: 10px;
+}
+
+.vektor .personagem::before {
+  top: -45px;
+  width: 75px;
+  height: 55px;
+  border-radius: 8px;
+  background: #2680bb;
+}
+
+.kage .personagem {
+  width: 110px;
+  height: 85px;
+  bottom: 75px;
+  border: 4px solid #a34fff;
+  background: #101029;
+}
+
+.kage .personagem::before {
+  display: none;
+}
+
+.kage .personagem span::before,
+.kage .personagem span::after {
+  top: 25px;
+  background: #c2baff;
+}
+
+.conteudo {
+  height: 310px;
+  padding: 16px 20px 20px;
+}
+
+.conteudo h3 {
+  margin: 0 0 6px;
+  font-size: 22px;
+}
+
+.conteudo p {
+  color: #9db0d6;
+  line-height: 1.45;
+}
+
+.conteudo .classe {
+  color: #259fff;
+  font-weight: bold;
+  margin: 0 0 18px;
+}
+
+button {
+  width: 100%;
+  height: 48px;
+  border: 0;
+  border-radius: 6px;
+  background: #315fff;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:disabled {
+  background: #202f56;
+  color: #68799d;
+  cursor: not-allowed;
+}
+
+.bloqueado {
+  filter: brightness(0.78);
+}
+
+.chat {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  padding: 20px 38px;
+  border-radius: 30px;
+  background: #18bca8;
+  color: #061d24;
+  font-weight: bold;
+}
+
